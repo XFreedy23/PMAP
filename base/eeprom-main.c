@@ -384,7 +384,6 @@ void MenuEEPROM(void)
                 };
                 break;
             case 2:
-            {
                 char useDefault;
                 char default_filename[256];
                 u32 serial = 0;
@@ -419,8 +418,7 @@ void MenuEEPROM(void)
                 }
 
                 PlatShowMessage("Dump %s.\n", DumpEEPROM(filename) == 0 ? "completed" : "failed");
-            }
-            break;
+                break;
             case 3:
                 PlatShowMessage("Enter dump filename: ");
                 if (fgets(filename, sizeof(filename), stdin))

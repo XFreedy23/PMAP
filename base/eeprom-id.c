@@ -155,6 +155,7 @@ int EEPROMNTSCPALDefaults(int vmode)
         MechaCommandAdd(MECHA_CMD_SETUP_OSD, "00", id++, 0, 6000, "WR INIT NTSC");
     else
         MechaCommandAdd(MECHA_CMD_SETUP_OSD, "01", id++, 0, 6000, "WR INIT PAL");
+    MechaCommandAdd(MECHA_TASK_UI_CMD_WAIT, NULL, MECHA_TASK_ID_UI, 0, 100, "EEPROM WAIT 100ms");
 
     return MechaCommandExecuteList(NULL, &EEPROMIDRxHandler);
 }
