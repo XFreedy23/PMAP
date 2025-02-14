@@ -1309,7 +1309,7 @@ static int ElectJudgeCDTPP(const char *data, int len)
 
         if (Tbal >= -30 && Tbal <= 30)
         {
-            PlatDPrintf("CD TPP Tbal  OK: %ld\n", Tbal);
+            PlatDPrintf("CD TPP Tbal  OK: %d\n", Tbal);
             return 0;
         }
         else
