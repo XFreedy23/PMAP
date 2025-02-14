@@ -1314,7 +1314,7 @@ static int ElectJudgeCDTPP(const char *data, int len)
         }
         else
         {
-            PlatShowEMessage("CD TPP Tbal NG: %ld\n", Tbal);
+            PlatShowEMessage("CD TPP Tbal NG: %d\n", Tbal);
             return (ConSlim == 1) ? 0 : 1;
         }
     }
